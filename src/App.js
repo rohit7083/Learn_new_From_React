@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FormComponent from './compo/FormValidation';
+import ApiIntegrate from './compo/ApiIntegrate';
+import DataFetch1 from './compo/DataFetch1';
+import Datafetch2 from './compo/Datafetch2';
+import LocalStorageDemo from './compo/LocalStorageDemo';
+import Login from './compo/demo/Login';
+import CreateCategory from './compo/demo/CreateCategory';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <FormComponent /> */}
+      {/* <ApiIntegrate/> */}
+      {/* <DataFetch1/> */}
+      {/* <Datafetch2/> */}
+      {/* <LocalStorageDemo/> */}
+
+      <Login/>
+      <CreateCategory/>
+
     </div>
   );
 }
