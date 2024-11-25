@@ -8,17 +8,48 @@ import Login from "./compo/demo/Login";
 import CreateCategory from "./compo/demo/CreateCategory";
 import { useContext } from "react";
 import ChaildA from "./compo/ChaildA";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import SimpleForm from "./reactHook/SimpleForm";
+import ReduxUI from "./redux/ReduxUI";
+import UseCase from "./useRefUseCase/UseCase";
+import Stopwatch from "./useRefUseCase/Stopwatch";
+
+// import Home From './compo/Routing';
 // steps1: Create Context
 // const UserContext = createContext();
 //  steps2:  wrap all the child  inside a provider
 //  steps3:pass value
 //  steps4:consumer k ander jaake consume karlo
 
-const themeContext = createContext();
+// const themeContext = createContext();
 
+/* ================== Routing ====================== */
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Home />,
+//   },
+//   {
+//     path: "/student",
+//     element: <Student />,
+
+// this is children routing of studensts
+// if u want to work this smoothly u have to add <outlet/> in student page at the end
+
+//     children:[
+//       {
+//         path:"/courses",
+//         element:<courses/>,
+//       },{
+//         path:"/reports",
+//         element:<Reports/>
+//       }
+//     ]
+//   },
+// ]);
 function App() {
   // const [user, setuser] = useState({name:"Love"})
-  const [theme, settheme] = useState("light");
+  // const [theme, settheme] = useState("light");
   return (
     <div className="App">
       {/* <FormComponent /> */}
@@ -26,25 +57,35 @@ function App() {
       {/* <DataFetch1/> */}
       {/* <Datafetch2/> */}
       {/* <LocalStorageDemo/> */}
-      {/* <Login/>
-      <CreateCategory/> */}
+      {/* <Login/> */}
+      {/* <CreateCategory/>  */}
+      {/* <SimpleForm/> */}
+      {/* <ReduxUI/> */}
+      {/* <UseCase/> */}
 
+      <Stopwatch />
+
+      {/* ================ useContext ===================== */}
       {/* <UserContext.Provider value={user}>
         <ChaildA/>
       </UserContext.Provider> */}
 
-      <themeContext.Provider value={{ theme, settheme }}>
+      {/* <themeContext.Provider value={{ theme, settheme }}>
         <div
           id="container"
           style={{ backgroundColor: theme === "light" ? "beige" : "darkblue" }}
         >
           <ChaildA />
         </div>
-      </themeContext.Provider>
+      </themeContext.Provider> */}
+
+      {/* ================== Routing ====================== */}
+
+      {/* <RouterProvider router={router} /> */}
     </div>
   );
 }
 
 export default App;
 // export {UserContext}
-export { themeContext };
+// export { themeContext };
