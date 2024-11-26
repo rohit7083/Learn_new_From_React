@@ -13,6 +13,10 @@ import SimpleForm from "./reactHook/SimpleForm";
 import ReduxUI from "./redux/ReduxUI";
 import UseCase from "./useRefUseCase/UseCase";
 import Stopwatch from "./useRefUseCase/Stopwatch";
+import Example from "./useMemoDemo/Example";
+import RegistrationForm from "./api_Integration/RegistrationForm";
+import DataPage from "./api_Integration/DataPage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // import Home From './compo/Routing';
 // steps1: Create Context
@@ -52,6 +56,7 @@ function App() {
   // const [theme, settheme] = useState("light");
   return (
     <div className="App">
+
       {/* <FormComponent /> */}
       {/* <ApiIntegrate/> */}
       {/* <DataFetch1/> */}
@@ -62,8 +67,18 @@ function App() {
       {/* <SimpleForm/> */}
       {/* <ReduxUI/> */}
       {/* <UseCase/> */}
+      {/* <Stopwatch /> */}
+      {/* <Example/> */}
 
-      <Stopwatch />
+{/* <RegistrationForm/> */}
+<Router>
+      <Routes>
+        <Route path="/" element={<RegistrationForm />} />
+        <Route path="/data" element={<DataPage />} />
+      </Routes>
+    </Router>
+
+
 
       {/* ================ useContext ===================== */}
       {/* <UserContext.Provider value={user}>
