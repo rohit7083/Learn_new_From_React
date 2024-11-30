@@ -17,6 +17,8 @@ import Example from "./useMemoDemo/Example";
 import RegistrationForm from "./api_Integration/RegistrationForm";
 import DataPage from "./api_Integration/DataPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Test from "./compo/Test";
+import Todo from "./Projects/Todo";
 
 // import Home From './compo/Routing';
 // steps1: Create Context
@@ -71,13 +73,16 @@ function App() {
       {/* <Example/> */}
 
 {/* <RegistrationForm/> */}
-<Router>
+{/* <Router>
       <Routes>
         <Route path="/" element={<RegistrationForm />} />
         <Route path="/data" element={<DataPage />} />
       </Routes>
-    </Router>
+    </Router> */}
 
+{/* <Test/> */}
+
+<Todo/>
 
 
       {/* ================ useContext ===================== */}
