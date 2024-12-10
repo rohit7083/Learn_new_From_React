@@ -1,5 +1,4 @@
 import React, { createContext, useState } from "react";
-import FormComponent from "./compo/FormValidation";
 import ApiIntegrate from "./compo/ApiIntegrate";
 import DataFetch1 from "./compo/DataFetch1";
 import Datafetch2 from "./compo/Datafetch2";
@@ -17,8 +16,10 @@ import Example from "./useMemoDemo/Example";
 import RegistrationForm from "./api_Integration/RegistrationForm";
 import DataPage from "./api_Integration/DataPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Test from "./compo/Test";
+import Test from "./Projects/Test";
 import Todo from "./Projects/Todo";
+import ValidationWithYup from "./Validation/ValidationWithYup";
+
 
 // import Home From './compo/Routing';
 // steps1: Create Context
@@ -58,8 +59,6 @@ function App() {
   // const [theme, settheme] = useState("light");
   return (
     <div className="App">
-
-      {/* <FormComponent /> */}
       {/* <ApiIntegrate/> */}
       {/* <DataFetch1/> */}
       {/* <Datafetch2/> */}
@@ -81,9 +80,10 @@ function App() {
     </Router> */}
 
 {/* <Test/> */}
+{/* <Todo/>
+<Test/> */}
 
-<Todo/>
-
+<ValidationWithYup/>
 
       {/* ================ useContext ===================== */}
       {/* <UserContext.Provider value={user}>
