@@ -19,7 +19,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Test from "./Projects/Test";
 import Todo from "./Projects/Todo";
 import ValidationWithYup from "./Validation/ValidationWithYup";
-
+import StopWatch from "./stopWatch/StopWatch";
 
 // import Home From './compo/Routing';
 // steps1: Create Context
@@ -83,8 +83,8 @@ function App() {
 {/* <Todo/>
 <Test/> */}
 
-<ValidationWithYup/>
-
+{/* <ValidationWithYup/> */}
+<StopWatch/>
       {/* ================ useContext ===================== */}
       {/* <UserContext.Provider value={user}>
         <ChaildA/>
