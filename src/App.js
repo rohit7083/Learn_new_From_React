@@ -20,6 +20,13 @@ import Test from "./Projects/Test";
 import Todo from "./Projects/Todo";
 import ValidationWithYup from "./Validation/ValidationWithYup";
 import StopWatch from "./stopWatch/StopWatch";
+import Sample from "./AddNewInputFields/Sample";
+import FormValidation from "./Validation/FormValidation";
+import FormSample from "./Validation/FormSample";
+import FormSample2 from "./Validation/FormSample2";
+import FormContextProvider from "./Validation/Context/FormContextProvider";
+import Form1 from "./PassData/Form1";
+import Form2 from "./PassData/Form2";
 
 // import Home From './compo/Routing';
 // steps1: Create Context
@@ -57,6 +64,7 @@ import StopWatch from "./stopWatch/StopWatch";
 function App() {
   // const [user, setuser] = useState({name:"Love"})
   // const [theme, settheme] = useState("light");
+
   return (
     <div className="App">
       {/* <ApiIntegrate/> */}
@@ -71,20 +79,40 @@ function App() {
       {/* <Stopwatch /> */}
       {/* <Example/> */}
 
-{/* <RegistrationForm/> */}
-{/* <Router>
+      {/* <RegistrationForm/> */}
+      {/* <Router>
       <Routes>
         <Route path="/" element={<RegistrationForm />} />
         <Route path="/data" element={<DataPage />} />
       </Routes>
     </Router> */}
 
-{/* <Test/> */}
-{/* <Todo/>
+      {/* <Test/> */}
+      {/* <Todo/>
 <Test/> */}
 
-{/* <ValidationWithYup/> */}
-<StopWatch/>
+      {/* <ValidationWithYup/> */}
+      {/* <StopWatch/> */}
+      {/* <FormValidation/> */}
+      {/* <FormSample/> */}
+      {/* <Sample/> */}
+
+      {/* <FormContextProvider><Router>
+      <Routes>
+        <Route path="/" element={<FormSample />} />
+        <Route path="/FormSample2" element={<FormSample2 />} />
+      </Routes>
+    </Router>
+
+    </FormContextProvider> */}
+
+      <Router>  
+        <Routes>
+          <Route path="/" element={<Form1 />} />
+          <Route path="/Form2" element={<Form2 />} />
+        </Routes>
+      </Router>
+
       {/* ================ useContext ===================== */}
       {/* <UserContext.Provider value={user}>
         <ChaildA/>

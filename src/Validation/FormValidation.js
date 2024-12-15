@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { data } from 'react-router-dom';
 
 const FormValidation = () => {
   const [formData, setFormData] = useState({
@@ -54,12 +55,13 @@ const FormValidation = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      console.log('Form Submitted:', formData);
+      // console.log('Form Submitted:', formData);
       alert('Form submitted successfully');
-      setFormData({ name: '', email: '', password: '' });
+      // setFormData({ name: '', email: '', password: '' });
       setErrors({});
     }
   };
+
 
   return (
     <div className="max-w-lg mx-auto p-6 bg-white shadow-lg rounded-lg">
